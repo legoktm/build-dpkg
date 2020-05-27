@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM debian:unstable
 
 ENV DEBIAN_FRONTEND=noninteractive
 
