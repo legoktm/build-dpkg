@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:eoan
 
 ENV DEBIAN_FRONTEND=noninteractive
 
