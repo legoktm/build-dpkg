@@ -3,7 +3,9 @@ FROM ubuntu:bionic
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get upgrade -y && \
- apt-get install build-essential debhelper devscripts equivs -y
+ # Need to use debhelper 11.3+ because of #897569
+ apt-get install debhelper -t bionic-backports -y && \
+ apt-get install build-essential devscripts equivs -y
 
 COPY entrypoint.sh /entrypoint.sh
 
