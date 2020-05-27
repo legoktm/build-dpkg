@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM debian:bullseye
 
 ENV DEBIAN_FRONTEND=noninteractive
 
