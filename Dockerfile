@@ -1,4 +1,4 @@
-FROM legoktm/gh-action-build-deb:ubuntu-groovy
+FROM legoktm/gh-action-build-deb:ubuntu-hirsute
 
 COPY entrypoint.sh /entrypoint.sh
 
